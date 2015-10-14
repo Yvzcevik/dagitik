@@ -55,7 +55,6 @@ hesapliyoruz"""
 d=abs(abs(counter_index_1)-abs(counter_index_2))
 
 #sonrasinda gelen degerlerin hesaplanmasi
-#while counter_index_1 < 39 | counter_index_2 < 39 :
 for i in range (0,20):
     print(counter_index_1)  
     print(counter_index_2) 
