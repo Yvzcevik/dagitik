@@ -1,7 +1,7 @@
 import numpy 
 
 x1,y1 = 2 , 0.7
-x2,y2 =  4 , 1.3
+x2,y2 =  4 , 0.5
 #olusturacagimiz dizilere atayacagimiz degerleri tutan counterlar
 counter_1 = 0
 counter_2 = 0
@@ -53,14 +53,19 @@ hesapliyoruz"""
 
 #ilk isleme girecek degerlerin distance degerini hesaplamasi
 d=abs(abs(counter_index_1)-abs(counter_index_2))
-  
+
 #sonrasinda gelen degerlerin hesaplanmasi
-while counter_index_1 < 40 or counter_index_2 < 40:
+#while counter_index_1 < 39 | counter_index_2 < 39 :
+for i in range (0,20):
+    print(counter_index_1)  
+    print(counter_index_2) 
+    print(D)    
     if array_1[counter_index_1] < array_2[counter_index_2]:
             D=d*array_1[counter_index_1]
             array_2[counter_index_2]=array_2[counter_index_2]-array_1[counter_index_1]
             array_1[counter_index_1]=0
             counter_index_1+=1
+            
     if array_1[counter_index_1]==array_2[counter_index_2]:
             D=d*array_1[counter_index_1]
             array_1[counter_index_1]=0
@@ -77,13 +82,12 @@ print(counter_index_1)
 print(counter_index_2)   
             
                 
-print (l1)
+
 print(array_1)
 print(array_2)
       
 print(sum(array_1))
 print(sum(array_2))        
-print(counter_index_1)  
-print(counter_index_2)  
+ 
 print(D)
 print(d)
